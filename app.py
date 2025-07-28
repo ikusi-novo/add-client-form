@@ -14,7 +14,7 @@ except Exception as e:
     st.error(e)
 
 if st.session_state.get('authentication_status'):
-    authenticator.logout()
+    # authenticator.logout()
     st.write(f'Welcome *{st.session_state.get("name")}*')
     st.title('Some content')
 elif st.session_state.get('authentication_status') is False:
